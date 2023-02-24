@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+body{
+    background-color: rgb(223, 217, 217);
+}
+ .navmenu{
+    text-align: center;
+    background-color: #222831;
+   
+    overflow: hidden;
+    
+    
+
+}
+div a{
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.navmenu a:hover {
+    background-color: #393E46;
+    color: #00ADB5;
+  }
+  
+
+  .topmenu a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .logo{
+    text-align: center;
+    padding: 20px;
+    margin-top: 5px;
+    font-family: 'Tilt Prism', cursive;
+    margin-right:  5px;
+    font-size: 30px;
+    margin-bottom: 5px;
+    float: right;
+    border-radius: 30px;
+    background-color: #9bc9b8;
+  }
