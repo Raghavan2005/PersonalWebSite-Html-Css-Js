@@ -1,48 +1,362 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
-
-body{
-    background-color: rgb(223, 217, 217);
-}
- .navmenu{
-    text-align: center;
-    background-color: #222831;
-   
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+html body {
+    background-color: #292929;
+    font-family: 'Ubuntu', sans-serif;
+    scrollbar-width: none; /* Firefox */
+    margin: 10px;
+    padding: 0;
     
-    
-
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
 }
-div a{
-    float: left;
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 30px;
-    border-radius: 10px;
+
+.h2change  {
+
+  text-align-last: center;
+  color: #099df3;
+}
+.h2change:hover  {
+
+
+  color: #0953f3;
+}
+/* WebKit-based browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  display: none;
+}
+ /* Default styles for larger screens */
+.navmenu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3%;
+  background-color: #292929;
+  align-content: center;
+  overflow: hidden;
+  justify-content: space-evenly;
+  padding: auto;
+}
+
+.navmenu a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0.20%;
+  margin-block-start: 0.2%;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 22px;
 }
 
 .navmenu a:hover {
-    background-color: #393E46;
-    color: #00ADB5;
-  }
-  
+  color: aquamarine;
+}
 
-  .topmenu a.active {
-    background-color: #04AA6D;
-    color: white;
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .navmenu {
+      flex-direction: column; /* Stack links vertically */
+      text-align: center;
   }
-  .logo{
-    text-align: center;
-    padding: 20px;
-    margin-top: 5px;
-    font-family: 'Tilt Prism', cursive;
-    margin-right:  5px;
-    font-size: 30px;
-    margin-bottom: 5px;
-    float: right;
-    border-radius: 30px;
-    background-color: #9bc9b8;
+
+  .navmenu a {
+      float: none; /* Remove the float for stacked links */
+      display: block; /* Make links full width */
+      padding: 10px 0; /* Adjust padding for better touch targets */
   }
+}
+
+  .profile .child-div {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.profile .child-text {
+    text-align: left;
+    flex: 1;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    width: 150px;
+    color: #ffffff;
+    max-width: 60%; 
+}
+
+.profile .child-img {
+    text-align: right;
+  
+}
+.profile .child-img img {
+  box-shadow: 10px 10px 10px  rgba(255, 255, 255, 0.795);
+  border-radius: 10px;
+}
+.profile .child-img img:hover {
+  box-shadow: 10px 10px 10px  rgba(0, 68, 255, 0.795);
+  border-radius: 10px;
+}
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.rounded-icon {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  background-color: #000000; /* Change the background color */
+  border-radius: 50%; /* Makes it rounded */
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 0 10px white;
+  color: #fff; /* Text color */
+  font-size: 34px;
+}
+.rounded-icon:hover {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  background-color: #ffffff; /* Change the background color */
+  border-radius: 50%; /* Makes it rounded */
+  text-align: center;
+  line-height: 50px;
+  color: #000000; /* Text color */
+  font-size: 34px;
+}
+
+
+.skills-text{
+  margin-top: 5%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  
+}
+.education{
+  margin-top: 5%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+
+}
+.education_block {
+  margin-top: 5%;
+  width: 70%;
+  box-sizing: border-box;
+  border: 1px solid #ffffff; /* Set the border to black */
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.education_block:hover{
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+.ed_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ed_text-block {
+  display: inline-block;
+  color: #fff;
+  margin: 10px; 
+
+}
+.text_light{
+  color: #aaaaaa;
+  margin-left: 10px;
+}
+.text_light_top{
+  margin-top: 2px;
+}
+.ed_dis{
+  font-size: medium;
+}
+.hr{
+  margin-top: 7%;
+  margin-bottom: 2%;
+}
+.project_bd {
+  border: 1px solid #ffffff;
+  padding: 2%;
+  width: 300px;
+  margin: 0 auto; /* Center align the project_bd elements horizontally */
+  text-align: center; /* Center-align text content */
+  margin-bottom: 20px; /* Add spacing between project blocks */
+}
+.project_bd:hover  {
+  border: 2px solid #00e1ff;
+  box-shadow: 0px 0px 20px rgba(85, 201, 255, 0.3);
+
+
+}
+
+.project_bd p {
+  color: white;
+}
+.project_bd h3 {
+  color: white;
+}
+.image-container {
+  
+  position: relative;
+  display: inline-block;
+} 
+.image-container a img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white; 
+  padding: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s; 
+}
+.image-container:hover .text-overlay {
+  opacity: 1; }
+
+.project_con {
+  display: flex; 
+  justify-content: center; }
+  .Blogs_bd {
+    border: 1px solid #ffffff;
+    padding: 1%;
+    width: 50%;
+    margin: 0 auto; /* Center align the project_bd elements horizontally */
+    text-align: center; /* Center-align text content */
+    margin-bottom: 10px;
+    position: relative; /* Add positioning for the bubble effect */
+}
+.Blogs_bd:hover{
+  border: 1px solid #2600ff;
+  box-shadow: 0px 0px 20px rgba(3, 7, 255, 0.3);
+
+}
+.Blogs_bd:hover .text-overlay {
+    opacity: 1; /* Display the text when hovering */
+    transform: scale(1); /* Scale up the text */
+    z-index: 1; /* Bring the text to the top */
+
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%) scale(0); /* Start scaled down and centered */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for the text */
+    color: white; /* Text color */
+    padding: 10px;
+    font-size: medium;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s, transform 0.3s; /* Smooth transition for opacity and transform */
+}
+
+.Blogs_bd h3 {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.Blogs_bd p {
+    margin: 0;
+    font-size: medium;
+}
+.container {
+width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  color: #9b06ff;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px 20px;
+  background-color: #00ff2a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00b345a1;
+}
+
+#response {
+  text-align: center;
+  margin-top: 20px;
+  color: #007BFF;
+}
+.footer{
+  text-align: center;
+  margin-top: 10%;
+  color: #00e1ff;
+}
+.footer h4{
+  text-align: center;
+  color: #8d8d8d;
+  font-size: small;
+  margin-bottom: 10%;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20%;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+.back-to-top.show {
+
+  display: block; /* Display when user scrolls down */
+}
+.bloge_title{
+ color: wheat;
+ text-decoration: none;
+}
+.bloge_p{
+  color: rgb(34, 154, 209);
+  text-decoration: none;
+}

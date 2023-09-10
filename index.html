@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Raghavan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <meta domain="raghavandev.web.app">
     <link rel="stylesheet" href="style.css">
     <title>Raghavan.Dev</title>
@@ -12,17 +14,141 @@
 <script rel="script" src="main.js">
 </script>
 <body>
+    <!--Nav Section-->
 <div class="navmenu">
-    <a href="##">ADOUT</a>
-    <a href="##">SKILLS</a>
-    <a href="##">PROJECT</a>
-    <a href="##">CONTACT</a>
-    <div class="logo" href="##">RS</div>
-    
-    
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#contact">Contact</a>
+   </div>
+   <!--Profile Section-->
+   <div id="about" class="profile">
+    <div class="child-div">
+        <div class="child-text">
+            <h2 class="h2change">About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus porro, autem possimus maiores quasi obcaecati quod perferendis iusto aperiam tempora nisi architecto fuga hic. Veniam explicabo voluptas quisquam beatae?</p>
+        </div>
+        <div class="child-img">
+            <img src="images/porfileimage.jpg" width="400px" height="500px">
+        </div>
+    </div>
+</div>
+<hr class="hr">
+<!--Skills Section-->
+<h3 id="skills" class="skills-text h2change">Skills</h3>
+<div class="icon-container">
+    <div class="rounded-icon">
+        <i class="fa-brands fa-html5"></i>
+    </div>
+    <div class="rounded-icon">
+        <i class="fa-brands fa-css3-alt"></i>
+    </div>
+    <div class="rounded-icon">
+        <i class="fa-brands fa-js"></i>
+    </div>
+    <div class="rounded-icon">
+        <i class="fa-brands fa-java"></i>
+    </div>
+ 
 
     </div>
+    <div class="icon-container">
+    <div class="rounded-icon">
+        <i class="fa-brands fa-unity"></i>
+    </div>
+    <div class="rounded-icon">
+        <i class="fa-brands fa-git"></i>
+      </div>  
+      <div class="rounded-icon">
+        <i class="fa-brands fa-android"></i>
+    </div>
+    <div class="rounded-icon">
+        <i class="fa-brands fa-python"></i>
+    </div>
+</div>
+</div>
+<hr class="hr">
+<!--Education Section-->
+<h2  id="education" class="education h2change">Education</h2>
+<div class="education_block">
+    <div class="ed_container">
+        <div class="ed_text-block">Kongu Polytechic College</div>
+        <div class="ed_text-block text_light">Sep-2018</div>
+          </div>
+          <p class="text_light text_light_top">Computer Science</p>
+          <p class="text_light ed_dis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cupiditate sequi eos in facilis molestiae? Porro eos eaque ut? Quisquam dolorum velit, optio tempore deleniti magni aut nostrum impedit ducimus.</p>
+        </div>
+  <hr class="hr">
+<h2 id="projects"class="education h2change">Projects</h2>
+<div  class="project_con">
+    <div class="project_bd">
+        <div class="image-container">
+            <a href="https://www.google.com" target="_blank">
+            <img src="david-marcu-78A265wPiO4-unsplash.jpg" alt="Image" >
+        </a>
+            <div class="text-overlay">Github</div>
+        </div>
+        <h3>Freeskills</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae, enim voluptate veniam blanditiis neque repellat commodi vitae? Aut quo quam autem non nemo illo laudantium ut qui voluptatum maiores!</p>
+    </div>
+    <div class="project_bd">
+        <div class="image-container">
+            <a href="https://www.google.com" target="_blank">
+           
+            <img src="david-marcu-78A265wPiO4-unsplash.jpg" alt="Image" >
+        </a>
+            <div class="text-overlay">Text to Display</div>
+        </div><h3>Freeskills</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae, enim voluptate veniam blanditiis neque repellat commodi vitae? Aut quo quam autem non nemo illo laudantium ut qui voluptatum maiores!</p>
+    </div>
+</div>
+<hr class="hr">
+<h2 id="blogs" class="education h2change">Blogs</h2>   
+<div class="Blogs_con">
+    <div class="Blogs_bd">
+        <div class="image-container">
+            <a href="https://www.google.com" target="_blank">
+            <div class="text-overlay">One On Blog</div>
+        </a>
+            <h3 class="bloge_title">Freeskills</h3>
+     <p class="bloge_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae, enim voluptate veniam blanditiis neque repellat commodi vitae? Aut quo quam autem non nemo illo laudantium ut qui voluptatum maiores!</p>
     
-
+        </div>
+    </div>
+</div>     
+<hr class="hr">
+<div class="reachout">
+    <h3 id="contact"  class="education h2change">Reach Out to me!</h3>
+    <div   class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="response"></div>
+    </div>
+ 
+</div>
+<hr class="hr">
+<footer class="footer">
+    <h2>Made with ❤️ by Raghavan</h2>
+    <h4 id="copyright"></h4>
+</footer>
+<div class="back-to-top">
+    <a href="#top">↑</a>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
